@@ -1,4 +1,4 @@
-
+"use strict";
 
 (function () {
     const form = document.querySelector(`#form`);

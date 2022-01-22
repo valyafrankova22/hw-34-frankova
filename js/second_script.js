@@ -1,3 +1,5 @@
+"use strict";
+
 const obj = JSON.parse(localStorage[`value`]);
 
 const arrayOfValues = Object.values(obj);
