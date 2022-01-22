@@ -1,7 +1,9 @@
+
+
 (function () {
     const form = document.querySelector(`#form`);
 
-    function formValue (event) {
+    form.addEventListener(`submit`, function(event) {
         event.preventDefault();
         const formData = new FormData(form);
         let values = Object.fromEntries(formData.entries());
@@ -9,7 +11,6 @@
         form.reset();
 
         localStorage['value'] = JSON.stringify(values);
-    }
-    form.addEventListener(`submit`, formValue);
+    });
 
 })()
